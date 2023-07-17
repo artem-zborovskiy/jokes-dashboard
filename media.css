@@ -1,0 +1,44 @@
+@media (max-width: 1200px) {
+    .joke_footer {
+        flex-direction: column;
+    }
+
+    .joke_footer .joke_category:not(:last-of-type) {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 850px) {
+    .favourites-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+        align-self: center;
+    }
+    
+    .favourites {
+       transform: translateX(100%);
+       position: absolute;
+       width: 86%;
+       padding: 0;
+       padding: 3% 7%;
+       padding-bottom: 0;
+    }
+
+    .jokes {
+        width: 100%;
+    }
+
+    .none {
+        display: flex;
+    }
+
+    .categoriesBlock {
+        max-height: 460px;
+        min-width: 280px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+}

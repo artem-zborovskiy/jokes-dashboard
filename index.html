@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris jokes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="jokes">
+            <header>
+                <div class="header-inner">
+                    <h1>MSI 2020</h1>
+                    <div class="favourites-wrapper none">
+                        <img src="img/menu_btn.svg" alt="" class="menu-btn">
+                        <p class="favourites_header">Favourite</p>
+                    </div>
+                </div>
+                
+                <p class="title">Hey!</p>
+                <p class="subtitle">Let’s try to find a joke for you:</p>
+            </header>
+    
+            <main>
+                <form id="form">
+                    <label class="type">
+                        <input type="radio" name="type" value="random">
+                        Random
+                    </label>
+    
+                    <label class="type">
+                        <input type="radio" name="type" value="categories">
+                        From categories
+                    </label>
+                    <div class="categoriesBlock"></div>
+    
+                    <label class="type">
+                        <input type="radio" name="type" value="search">
+                        Search
+                        <input type="text" id="userSearch" placeholder="Free text search..." class="search hide">
+                    </label>
+    
+                    <button class="btn">Get a joke</button>
+                </form>
+    
+                <div class="jokesList"></div>
+            </main>
+        </div>
+
+        <div class="favourites">
+            <div class="favourites-wrapper" id="favourites-btn">
+                <img src="img/menu_cross.svg" alt="" class="menu-btn none">
+                <p class="favourites_header">Favourite</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="header.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
